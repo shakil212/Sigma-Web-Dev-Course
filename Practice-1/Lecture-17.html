@@ -1,2 +1,127 @@
-<!-- This lecture about CSS Selector
-Remind you about the CSS selector and how to use it in your code.  -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selector</title>
+  </head>
+  <body>
+    <style>
+      /* Element Selector */
+      div {
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        background-color: rgb(33, 187, 125);
+        padding: 10px;
+        border: 2px solid black;
+      }
+      /* Class Selector */
+      .shakil {
+        /* .shakil means class is shakil */
+        color: black;
+        font-size: 30px;
+        background-color: gray;
+        padding: 20px;
+        border: 2px solid black;
+      }
+      /* ID Selector */
+      #cse {
+        background-color: blueviolet;
+        color: white;
+        font-size: 30px;
+        padding: 20px;
+        border: 2px solid black;
+      }
+
+      /* Descendant Selector */
+
+      /* Child Selector */
+      div > p {
+        /* div > p means p is child of div */
+        color: red;
+        font-size: 25px;
+        background-color: rgb(255, 253, 253);
+        padding: 10px;
+        border: 2px solid black;
+      }
+
+      /* Direct Child Selector */
+      div p {
+        /* div p means p is child of div */
+        color: rgb(103, 41, 41);
+        font-size: 25px;
+        background-color: rgb(255, 253, 253);
+      }
+      /* Adjacent Sibling Selector */
+      /* First Child Selector */
+      /* Last Child Selector */
+      /* Nth Child Selector */
+      /* Nth Last Child Selector */
+      /* Nth of Type Selector */
+      /* Nth Last of Type Selector */
+      /* Nth of Type Even Selector */
+      /* Nth of Type Odd Selector */
+      /* Nth Child Even Selector */
+      /* Adjacent Selector */
+      /* General Sibling Selector */
+      /* Attribute Selector */
+      /* Pseudo-class Selector */
+      /* Pseudo-element Selector */
+      a:visited {
+        color: rgb(224, 216, 0);
+      }
+
+      a:link {
+        color: rgb(2, 29, 103);
+      }
+      a:active {
+        background-color: red;
+      }
+      a:hover {
+        background-color: rgb(218, 156, 0);
+      }
+      a:focus {
+        background-color: rgb(52, 0, 129);
+      }
+      P:first-child {
+        background-color: hotpink;
+      }
+      P:last-child {
+        background-color: rgb(228, 228, 228);
+      }
+
+      /* Grouping Selector */
+      /* Combinator Selector */
+
+      /* Universal Selector */
+      * {
+        /* * means all elements */
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        background-color: rgb(152, 103, 196);
+      }
+
+      /* Negation Selector */
+      /* Attribute Selector */
+    </style>
+
+    <main class="one">
+      <p>Hey I am Shakil Mahmud</p>
+      <p>Hey I am Shakil</p>
+    </main>
+
+    <div id="cse">
+      <!-- #cse means id is shakil -->
+      I am an Engineer.
+    </div>
+    <a href="https://www.w3schools.com/cssref/css_selectors.asp"
+      >CSS Selectors</a
+    >
+    <a href="https://www.instagram.com" target="_blank">instagram</a>
+
+    <br />
+    <div class="shakil">I am a div element.</div>
+    <br />
+    <div>I am another div element.</div>
+  </body>
+</html>
