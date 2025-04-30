@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Categories</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 10px;
+      }
+      .category {
+        margin-bottom: 30px;
+      }
+      .category h2 {
+        margin-bottom: 10px;
+        font-size: 24px;
+      }
+      iframe {
+        width: 100%;
+        height: 315px;
+        margin-bottom: 15px;
+        border: none;
+      }
+      audio {
+        width: 100%;
+        margin-bottom: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="category">
+        <h2>Video Category: Nature</h2>
+        <iframe
+          src="https://www.youtube.com/embed/Scxs7L0vhZ4"
+          allowfullscreen
+        ></iframe>
+        <iframe
+          src="https://www.youtube.com/embed/eT7nD02Im5E"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="category">
+        <h2>Video Category: Technology</h2>
+        <iframe
+          src="https://www.youtube.com/embed/2eVRv2twNlI"
+          allowfullscreen
+        ></iframe>
+        <iframe
+          src="https://www.youtube.com/embed/3vL1w3kJKbY"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="category">
+        <h2>Audio Category: Relaxing Music</h2>
+        <audio controls>
+          <source
+            src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+            type="audio/mpeg"
+          />
+          Your browser does not support the audio element.
+        </audio>
+        <audio controls>
+          <source
+            src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3"
+            type="audio/mpeg"
+          />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="category">
+        <h2>Audio Category: Podcasts</h2>
+        <audio controls>
+          <source
+            src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3"
+            type="audio/mpeg"
+          />
+          Your browser does not support the audio element.
+        </audio>
+        <audio controls>
+          <source
+            src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3"
+            type="audio/mpeg"
+          />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
+  </body>
+</html>
