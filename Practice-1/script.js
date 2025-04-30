@@ -1,0 +1,1 @@
+// alert("Are you ready to play a game?");
