@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture-22</title>
+    <style>
+      html{
+        font-size: 12px;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .box {
+        box-sizing: border-box;
+        border: 2px solid black;
+        width: 200px;
+        background-color: rgb(13, 168, 117);
+      }
+      .container {
+        box-sizing: border-box;
+        border: 2px solid black;
+        width: 80vw;
+        /* height:80vh; */
+        min-height: 80vh;
+        background-color: rgb(2, 63, 0);
+        margin: 23px auto;
+        /* font-size: 18px; */
+        background-color: rgb(23, 141, 33);
+      }
+      .container > div {
+        font-size: 1.5em;
+        width: 50%;
+        border: 2px solid rgb(161, 0, 0);
+      }
+      .container > div > div{
+        border: 2px solid black;
+        width: 50%;
+      }
+      .mycot{
+        border: 2px solid black;
+        box-sizing: border-box;
+        margin: 23px auto;
+        color: red;
+        font-size: 22px;
+        width: 100vmin;
+        width: 80vw;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">This is a box</div>
+    <div class="container">
+      <div>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet aut quis
+        sapiente ea architecto! Voluptatem quia dolorem eaque ipsa nesciunt
+        quos, facilis ullam, laboriosam enim et nihil alias vitae. Eaque dolorem
+        vitae dolor omnis aliquid, ex odit necessitatibus enim ut cupiditate,
+        minus reprehenderit 
+        <div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, officia nobis voluptatem quos rem nostrum atque. Rerum est aliquid animi eligendi, rem sapiente.
+        </div>
+    </div>
+      
+    </div>
+    <div class="mycot">
+      I am another container
+    </div>
+  </body>
+</html>
