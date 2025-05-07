@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Transform</title>
+   <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        width: 100vw;
+        height: 80vh;
+        border: 2px solid black;        
+    }
+    .box{
+        height: 50px;
+        width: 50px;
+        background-color: bisque;
+        border: 2px solid rgb(209, 3, 3);
+        /* transform: rotate(45deg) translateX(50px) translateY(50px); */
+        /* transform: rotate(40deg); */
+        /* transform:rotate(0.5turn); */
+        /* transform: rotatex(40deg); */
+        /* transform: rotateY(45deg); */
+        /* transform: rotateZ(45deg); */
+        /* transform: scale(1.5); */
+        /* transform: scaleX(1.5); */
+        /* transform: scaleY(1.5); */
+        /* transform: scaleZ(1.5); */
+        /* transform: scale3d(1.5, 1.5, 1.5); */
+        /* transform: skew(5deg); */
+        /* transform: skew(5deg, 5deg); */
+        /* transform: skewX(5deg); */
+        /* transform: skewY(35deg); */
+        /* There is no skew transform about z axis. transform: skewz(35deg); --> this is not valid. */
+        /* transform: translate(50px); */
+        /* transform: translate(50px, 50px); */
+        /* transform: translatex(50px); */
+        /* transform: translateY(50px); */
+        /* transform: translateX(100%); */
+        /* transform: translateY(100%) skewx(40deg) translateX(45%); */
+        /* transform: translate(-100%); */
+        transform: rotate(.125turn);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+   </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">box1</div>
+    </div>
+  </body>
+</html>
