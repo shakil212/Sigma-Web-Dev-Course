@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise-3</title>
+    <style>
+      body {
+        background-color: #e6f0f3;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+        margin-top: 20px;
+      }
+
+      .card {
+        width: 350px;
+        background: white;
+        border-radius: 16px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        padding-bottom: 20px;
+        position: fixed;
+      }
+
+      .card-img {
+        width: 100%;
+        height: auto;
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+      }
+
+      .card-content {
+        padding: 20px;/
+      }
+
+      .tags {
+        margin-bottom: 10px;
+      }
+
+      .tag {
+        display: inline-block;
+        background-color: #f0f4f8;
+        color: #4a6fa1;
+        border-radius: 999px;
+        padding: 6px 12px;
+        font-size: 12px;
+        margin-right: 8px;
+      }
+
+      .title {
+        font-size: 22px;
+        color: #2a2a2a;
+        margin: 10px 0;
+      }
+
+      .description {
+        font-size: 14px;
+        color: #6c757d;
+        /* line-height: 1.6; */
+      }
+
+      .read-more {
+        display: block;
+        margin: 15px auto 0 auto;
+        background-color: #dceeff;
+        color: #2a5aa0;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 999px;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 14px;
+        transition: background 0.3s ease;
+      }
+
+      .read-more:hover {
+        background-color: #c0e0ff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <img
+        src="https://www.w3schools.com/w3images/lights.jpg"
+        alt="Lago di Braies"
+        class="card-img"
+      />
+      <div class="card-content">
+        <div class="tags">
+          <span class="tag">Nature</span>
+          <span class="tag">Lake</span>
+        </div>
+        <h2 class="title">Lago di Braies</h2>
+        <p class="description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur
+          sodales morbi dignissim sed diam pharetra vitae ipsum odio.
+        </p>
+        <button class="read-more">Read More</button>
+      </div>
+    </div>
+  </body>
+</html>
