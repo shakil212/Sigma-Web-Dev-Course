@@ -1,3 +1,7 @@
+prompt("Enter your name");
+alert("It's Dangerous to go alone! Take this.");
+confirm("Are you sure you want to delete this?");
+
 let arr=[1,34,55,66,77,7]
 
 let newarr=arr.map((element, index, array) =>{
@@ -30,3 +34,11 @@ console.log(arr.filter( (element)=>{ // we can also write the function in this w
     }
     return false;
 }));
+
+
+let arr2=[1,2,3,4,5,6]
+
+const blue=(a,b)=> {
+    return a+b;
+}
+console.log(arr2.reduce(blue)); // this will give the sum of all the elements in the array
