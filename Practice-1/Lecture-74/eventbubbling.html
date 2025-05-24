@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Bubbling</title>
+
+    <style>
+      .child {
+        background-color: rgb(122, 46, 122);
+        padding: 20px;
+        margin: 10px;
+        color: white;
+        cursor: pointer;
+      }
+      .childContainer {
+        background-color: hotpink;
+        padding: 20px;
+        margin: 10px;
+        cursor: pointer;
+      }
+      .conainer {
+        background-color: rgb(207, 125, 139);
+        padding: 20px;
+        margin: 10px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="conainer">
+      <div class="childContainer">
+        <div class="child">I am a Child</div>
+      </div>
+    </div>
+
+    <script>
+      document.querySelector(".child").addEventListener("click", (e) => {
+        e.stopPropagation();
+        alert("Child was clicked");
+      });
+
+      document
+        .querySelector(".childContainer")
+        .addEventListener("click", (e) => {
+          // e.stopPropagation();
+          alert("Child Container was clicked");
+        });
+      document.querySelector(".conainer").addEventListener("click", (e) => {
+        e.stopPropagation();
+        alert("Container was clicked");
+      });
+
+      function getrandomColor() {
+        // function to generate random color
+        // Math.random() generates a random number between 0 and 1
+        let val1 = Math.ceil(0 + Math.random() * 255);
+        let val2 = Math.ceil(0 + Math.random() * 255);
+        let val3 = Math.ceil(0 + Math.random() * 255);
+        return `rgb(${val1},${val2},${val3})`;
+      }
+      setInterval(() => {
+        // setInterval to change color every second
+        document.querySelector(".child").style.backgroundColor =
+          getrandomColor();
+      }, 1000);
+      setInterval(() => {
+        document.querySelector(".childContainer").style.backgroundColor =
+          getrandomColor();
+      }, 1000);
+      setInterval(() => {
+        document.querySelector(".conainer").style.backgroundColor =
+          getrandomColor();
+      }, 1000);
+
+      // let a = setInterval(() => {
+      //     document.querySelector(".child").style.backgroundColor = getrandomColor();
+      // }, 1000);
+      // console.log(a);
+      // clearInterval(4); // clearInterval to stop the interval
+      // clearInterval(a); // clearInterval to stop the interval
+
+    //   let a = setTimeout(() => { // setTimeout to change color after 3 seconds
+    //     document.querySelector(".child").style.backgroundColor =
+    //       getrandomColor();
+    //   }, 1000);
+    //   console.log(a);
+    //   clearTimeout(a); // clearTimeout to stop the timeout
+    </script>
+  </body>
+</html>
