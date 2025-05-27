@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise-13</title>
+    <style>
+      .card {
+        display: flex;
+        border: 2px solid black;
+        background-color: rgb(34, 28, 28);
+         margin: 8px;
+      }
+      .card .image {
+        width: auto;
+        height: auto;
+        position: relative;
+       border-radius: 50px;
+      }
+      .card .image img{
+        border-radius: 20px;
+      }
+      .image .capsule {
+        position: absolute;
+        bottom: 3px;
+        z-index: 10;
+        right: 5px;
+        background-color: rgb(44, 44, 44);
+        opacity: 0.9;
+        color: white;
+        padding: 3px;
+        border-radius: 3px;
+        font-size: 15px;
+      }
+
+      .card .text h1,
+      p {
+        margin: 10px 7px;
+        padding: 5px 5px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .card .text h1 {
+        font-size: 22px;
+        color: white;
+      }
+      .card .text p {
+        font-size: 15px;
+        color: rgb(165, 155, 155);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="image">
+          <img
+            src="https://i.ytimg.com/vi/tVzUXW6siu0/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLACwWOixJVrKLFindK92kYMgTcQbw"
+            alt="Image"
+          />
+          <div class="capsule">31.25</div>
+        </div>
+        <div class="text">
+          <h1>
+            Installing VS Code & How websites work | Sigma Web Development
+            Courese Tutorial #1
+          </h1>
+          <p>CodeWithShakil .772K views .2 months ago</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<!-- https://i.ytimg.com/vi/tVzUXW6siu0/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLACwWOixJVrKLFindK92kYMgTcQbw -->

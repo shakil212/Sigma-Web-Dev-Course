@@ -12,9 +12,9 @@ let prom1 = new Promise((resolve, reject) => {
         }, 1000);
 
     }
-}) 
+})
 
-let prom2 = new Promise((resolve, reject) => {
+let prom2 = new Promise((resolve, reject) => { 
     let a = Math.random();
     if (a < 0.5) {
         reject("No ranadom  number was not suppoting you 2");
@@ -50,8 +50,8 @@ let prom2 = new Promise((resolve, reject) => {
 // })
 
 let p3 = Promise.race([prom1, prom2])
-p3.then((a)=>{
+p3.then((a) => {
     console.log(a);
-}).catch((err) =>{
+}).catch((err) => {
     console.log(err);
 })
