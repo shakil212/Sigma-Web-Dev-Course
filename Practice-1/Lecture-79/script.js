@@ -20,11 +20,11 @@ function main() {
         return false
     }
 
-    console.log("The Programs are being closed because the server is down")
+    // console.log("The Programs are being closed because the server is down")
 
-    // finally{
-    //     console.log("The Programs are being closed because the server is down")
-    // }
+    finally{
+        console.log("The Programs are being closed because the server is down")
+    }
 }
 
 let c = main()
